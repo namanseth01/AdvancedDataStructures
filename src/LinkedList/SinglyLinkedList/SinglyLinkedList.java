@@ -42,15 +42,36 @@ public class SinglyLinkedList {
         return count;
     }
 
+    /*
+    Algo to insert node at beginning
+    1. ListNode newNode = new ListNOde(value);
+    2. newNOde.next = head;
+    3. head = newNode;
+     */
+
+    public void insertAtBeginning(int value) {
+        ListNode newNode = new ListNode(value);
+        if (head == null) {
+            head = newNode;
+        } else {
+            newNode.next = head;
+            head = newNode;
+        }
+    }
+
+
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
-        sll.head = new ListNode(10);
-        ListNode second = new ListNode(1);
-        ListNode third = new ListNode(8);
-        ListNode fourth = new ListNode(11);
-        sll.head.next = second;
-        second.next = third;
-        third.next = fourth;
+//        sll.head = new ListNode(10);
+//        ListNode second = new ListNode(1);
+//        ListNode third = new ListNode(8);
+//        ListNode fourth = new ListNode(11);
+//        sll.head.next = second;
+//        second.next = third;
+//        third.next = fourth;
+        sll.insertAtBeginning(11);
+        sll.insertAtBeginning(8);
+        sll.insertAtBeginning(1);
         sll.display();
         System.out.println("Length of linked list: " + sll.length());
     }
