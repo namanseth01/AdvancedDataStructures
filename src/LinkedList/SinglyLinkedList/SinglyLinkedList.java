@@ -59,6 +59,28 @@ public class SinglyLinkedList {
         }
     }
 
+    /*
+    Algo to insert node at last
+    1. ListNode newNOde = new ListNode(value);
+    2. if (head == null) { head = newNode; return; }
+    3. ListNode current = head;
+    4. while (current.next != null) { current = current.next; }
+    5. current.next = newNode;
+     */
+
+    public void insertAtLast(int value) {
+        ListNode newNode = new ListNode(value);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        ListNode current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = newNode;
+    }
+
 
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
@@ -72,6 +94,10 @@ public class SinglyLinkedList {
         sll.insertAtBeginning(11);
         sll.insertAtBeginning(8);
         sll.insertAtBeginning(1);
+        sll.display();
+        System.out.println("------------------------");
+        sll.insertAtLast(15);
+        sll.insertAtLast(26);
         sll.display();
         System.out.println("Length of linked list: " + sll.length());
     }
