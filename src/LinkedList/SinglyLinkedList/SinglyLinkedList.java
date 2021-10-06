@@ -9,6 +9,7 @@ package LinkedList.SinglyLinkedList;
 
 public class SinglyLinkedList {
     private ListNode head;
+
     private static class ListNode{
         private int data;
         private ListNode next;
@@ -18,10 +19,11 @@ public class SinglyLinkedList {
             this.next = null;
         }
     }
+
     public void display(){
         ListNode current = head;
         while (current!=null){
-            System.out.print(current.data + "--");
+            System.out.print(current.data + " -> ");
             current = current.next;
         }
         System.out.print("null");
