@@ -81,6 +81,24 @@ public class SinglyLinkedList {
         current.next = newNode;
     }
 
+    /*
+    Algo to delete first node
+    1. if (head = null) { return null; }
+    2. ListNode temp = head;
+    3. head = head.next;
+    4. temp.next = null;
+    5. return temp;
+     */
+
+    public ListNode deleteAtFirst() {
+        if (head == null) {
+            return null;
+        }
+        ListNode temp = head;
+        head = head.next;
+        temp.next = null;
+        return temp;
+    }
 
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
@@ -92,7 +110,7 @@ public class SinglyLinkedList {
         second.next = third;
         third.next = fourth;
         sll.display();
-        System.out.println("---------------------------");
+        System.out.println("-------------------------");
         sll.insertAtBeginning(11);
         sll.insertAtBeginning(8);
         sll.insertAtBeginning(1);
@@ -101,7 +119,10 @@ public class SinglyLinkedList {
         sll.insertAtLast(15);
         sll.insertAtLast(26);
         sll.display();
+        System.out.println("------------------------");
+        sll.deleteAtFirst();
+        sll.deleteAtFirst();
+        sll.display();
         System.out.println("Length of linked list: " + sll.length());
-
     }
 }
