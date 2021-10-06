@@ -102,5 +102,6 @@ public class SinglyLinkedList {
         sll.insertAtLast(26);
         sll.display();
         System.out.println("Length of linked list: " + sll.length());
+
     }
 }
