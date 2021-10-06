@@ -110,7 +110,7 @@ public class SinglyLinkedList {
         second.next = third;
         third.next = fourth;
         sll.display();
-        System.out.println("-------------------------");
+        System.out.println("---------------------------");
         sll.insertAtBeginning(11);
         sll.insertAtBeginning(8);
         sll.insertAtBeginning(1);
