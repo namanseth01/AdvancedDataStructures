@@ -159,8 +159,32 @@ public class SinglyLinkedList {
     }
 
     /*
-    Algo to delete the node at particular position
+    Algo to delete the node at particular position.
+    1. if (pos == 1) { head = head.next; }
+            else { prev = head; int count = 1;
+                    while (count < pos - 1) {
+                        prev = prev.next;
+                        count++;
+                    }
+                   current = prev.next;
+                   prev.next = current.next;
+            }
      */
+
+    public void deleteFromPosition(int position) {
+        if (position == 1) {
+            head = head.next;
+        } else {
+            ListNode previous = head;
+            int count = 1;
+            while (count < position - 1) {
+                previous = previous.next;
+                count++;
+            }
+            ListNode current = previous.next;
+            previous.next = current.next;
+        }
+    }
 
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
