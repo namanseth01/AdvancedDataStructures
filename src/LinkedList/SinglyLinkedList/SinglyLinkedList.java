@@ -186,6 +186,10 @@ public class SinglyLinkedList {
         }
     }
 
+    /*
+    Algo to find middle node of a linked list.
+     */
+
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
