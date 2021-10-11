@@ -100,6 +100,11 @@ public class SinglyLinkedList {
         return temp;
     }
 
+    /*
+    Algo to delete the last node
+    1.
+     */
+
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
