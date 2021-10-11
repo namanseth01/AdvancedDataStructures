@@ -157,6 +157,11 @@ public class SinglyLinkedList {
             newNode.next = current;
         }
     }
+
+    /*
+    Algo to delete the node at particular position
+     */
+
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
