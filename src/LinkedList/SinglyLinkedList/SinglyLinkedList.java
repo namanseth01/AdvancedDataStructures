@@ -215,6 +215,9 @@ public class SinglyLinkedList {
         System.out.println("-------------------------");
         sll.insertAtPosition(2, 3);
         sll.display();
+        System.out.println("--------------------------");
+        sll.deleteFromPosition(3);
+        sll.display();
         System.out.println("Length of linked list: " + sll.length());
     }
 }
