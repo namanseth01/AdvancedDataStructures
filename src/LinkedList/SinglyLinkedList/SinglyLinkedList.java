@@ -147,6 +147,9 @@ public class SinglyLinkedList {
         sll.deleteAtFirst();
         sll.deleteAtFirst();
         sll.display();
+        System.out.println("-------------------------");
+        sll.deleteFromLast();
+        sll.display();
         System.out.println("Length of linked list: " + sll.length());
     }
 }
