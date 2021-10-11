@@ -124,6 +124,26 @@ public class SinglyLinkedList {
         return current;
     }
 
+    /*
+    Algo to insert a node at given position.
+    1. ListNode newNode = new ListNode(data);
+    2. if (pos == 1) { newNode.next = head; head = newNode; }
+            else { ListNode prev = head; int count = 1;
+                        while (count < pos - 1) {
+                        prev = prev.next;
+                        count++;
+                        }
+    3. ListNode current = prev.next;
+    4. newNode.next = current;
+    5. prev.next = newNode;
+     */
+
+    public void insertAtPosition(int position, int value) {
+        ListNode newNode = new ListNode(value);
+        if (position == 1) {
+
+    }
+
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
