@@ -102,8 +102,27 @@ public class SinglyLinkedList {
 
     /*
     Algo to delete the last node
-    1.
+    1. if (head == null || head.next == null) { return head; }
+    2. current = head;
+    3. previous = null;
+    4. while (current.next != null) { previous = current; current =  current.next }
+    5. previous.next = null;
+    6. return current;
      */
+
+    public ListNode deleteFromLast() {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode current = head;
+        ListNode previous = null;
+        while (current.next != null) {
+            previous = current;
+            current = current.next;
+        }
+        previous.next = null;
+        return current;
+    }
 
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
