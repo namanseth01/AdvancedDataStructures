@@ -188,8 +188,4 @@ public class SinglyLinkedList {
         sll.display();
         System.out.println("Length of linked list: " + sll.length());
     }
-
-
-
-
 }
