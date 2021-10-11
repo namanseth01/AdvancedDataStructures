@@ -153,8 +153,8 @@ public class SinglyLinkedList {
                         count++;
                         }
     3.              ListNode current = prev.next;
+    4.              prev.next = newNode;
     4.              newNode.next = current;
-    5.              prev.next = newNode;
                  }
      */
 
@@ -170,7 +170,9 @@ public class SinglyLinkedList {
                 previous = previous.next;
                 count++;
             }
-            ListNode current = previous
+            ListNode current = previous.next;
+            previous.next = newNode;
+            newNode.next = current;
         }
 
     }
