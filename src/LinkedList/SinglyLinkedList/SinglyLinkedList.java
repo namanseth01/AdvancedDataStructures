@@ -156,7 +156,6 @@ public class SinglyLinkedList {
             previous.next = newNode;
             newNode.next = current;
         }
-
     }
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
