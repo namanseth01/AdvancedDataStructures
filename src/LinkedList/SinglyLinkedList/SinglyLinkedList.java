@@ -8,36 +8,18 @@
 package LinkedList.SinglyLinkedList;
 
 public class SinglyLinkedList {
-    private ListNode head;
 
-    public static void main(String[] args) {
-        SinglyLinkedList sll = new SinglyLinkedList();
-        sll.head = new ListNode(10);
-        ListNode second = new ListNode(1);
-        ListNode third = new ListNode(8);
-        ListNode fourth = new ListNode(11);
-        sll.head.next = second;
-        second.next = third;
-        third.next = fourth;
-        sll.display();
-        System.out.println("---------------------------");
-        sll.insertAtBeginning(11);
-        sll.insertAtBeginning(8);
-        sll.insertAtBeginning(1);
-        sll.display();
-        System.out.println("------------------------");
-        sll.insertAtLast(15);
-        sll.insertAtLast(26);
-        sll.display();
-        System.out.println("------------------------");
-        sll.deleteAtFirst();
-        sll.deleteAtFirst();
-        sll.display();
-        System.out.println("-------------------------");
-        sll.deleteFromLast();
-        sll.display();
-        System.out.println("Length of linked list: " + sll.length());
+    private static class ListNode {
+        private final int data;
+        private ListNode next;
+
+        private ListNode(int data) {
+            this.data = data;
+            this.next = null;
+        }
     }
+
+    private ListNode head;
 
     public void display() {
         ListNode current = head;
@@ -176,14 +158,36 @@ public class SinglyLinkedList {
         }
 
     }
-
-    private static class ListNode {
-        private final int data;
-        private ListNode next;
-
-        private ListNode(int data) {
-            this.data = data;
-            this.next = null;
-        }
+    public static void main(String[] args) {
+        SinglyLinkedList sll = new SinglyLinkedList();
+        sll.head = new ListNode(10);
+        ListNode second = new ListNode(1);
+        ListNode third = new ListNode(8);
+        ListNode fourth = new ListNode(11);
+        sll.head.next = second;
+        second.next = third;
+        third.next = fourth;
+        sll.display();
+        System.out.println("---------------------------");
+        sll.insertAtBeginning(11);
+        sll.insertAtBeginning(8);
+        sll.insertAtBeginning(1);
+        sll.display();
+        System.out.println("------------------------");
+        sll.insertAtLast(15);
+        sll.insertAtLast(26);
+        sll.display();
+        System.out.println("------------------------");
+        sll.deleteAtFirst();
+        sll.deleteAtFirst();
+        sll.display();
+        System.out.println("-------------------------");
+        sll.deleteFromLast();
+        sll.display();
+        System.out.println("Length of linked list: " + sll.length());
     }
+
+
+
+
 }
