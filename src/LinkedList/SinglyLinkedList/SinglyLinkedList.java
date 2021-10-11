@@ -188,7 +188,20 @@ public class SinglyLinkedList {
 
     /*
     Algo to find middle node of a linked list.
+    1. slowPtr = head;
+    2. fastPtr = head;
+    3. while (fatsPtr != null && fast.next != null) {
+            slowPtr = slowPtr.next;
+            fastPtr = fastPtr.next.next;
+       }
+    4. return slowPtr;
      */
+
+    public ListNode findMiddleNode() {
+        ListNode slowPointer = head;
+        ListNode fastPointer = head;
+        while
+    }
 
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
