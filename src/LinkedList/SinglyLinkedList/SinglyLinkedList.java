@@ -200,7 +200,11 @@ public class SinglyLinkedList {
     public ListNode findMiddleNode() {
         ListNode slowPointer = head;
         ListNode fastPointer = head;
-        while
+        while (fastPointer != null && fastPointer.next != null) {
+            slowPointer = slowPointer.next;
+            fastPointer = fastPointer.next.next;
+        }
+        return slowPointer;
     }
 
     public static void main(String[] args) {
