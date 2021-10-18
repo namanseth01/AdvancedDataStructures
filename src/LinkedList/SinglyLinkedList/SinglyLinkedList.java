@@ -251,6 +251,7 @@ public class SinglyLinkedList {
      */
 
     public void removeDuplicatesInSortedList() {
+        ListNode current = head;
 
     }
     public static void main(String[] args) {
