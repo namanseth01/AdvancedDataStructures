@@ -270,6 +270,8 @@ public class SinglyLinkedList {
         sll.deleteFromPosition(3);
         sll.display();
         System.out.println("---------------------------");
+        System.out.println("Third node from end: " + sll.findNodeFromEnd(3).data);
+        System.out.println("Fifth node from end: " + sll.findNodeFromEnd(5).data);
         System.out.println("Middle node:" + sll.findMiddleNode().data);
         System.out.println("Length of linked list: " + sll.length());
     }
