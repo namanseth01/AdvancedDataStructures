@@ -260,6 +260,10 @@ public class SinglyLinkedList {
             }
         }
     }
+
+    public ListNode insertNodeAtSortedList(int value) {
+        return head;
+    }
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
