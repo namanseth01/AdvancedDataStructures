@@ -9,48 +9,17 @@ package LinkedList.SinglyLinkedList;
 
 public class SinglyLinkedList {
 
-    private ListNode head;
+    private static class ListNode {
+        private final int data;
+        private ListNode next;
 
-    public static void main(String[] args) {
-        SinglyLinkedList sll = new SinglyLinkedList();
-        sll.head = new ListNode(10);
-        ListNode second = new ListNode(1);
-        ListNode third = new ListNode(8);
-        ListNode fourth = new ListNode(11);
-        sll.head.next = second;
-        second.next = third;
-        third.next = fourth;
-        sll.display();
-        System.out.println("---------------------------");
-        sll.insertAtBeginning(11);
-        sll.insertAtBeginning(8);
-        sll.insertAtBeginning(1);
-        sll.display();
-        System.out.println("------------------------");
-        sll.insertAtLast(15);
-        sll.insertAtLast(26);
-        sll.display();
-        System.out.println("------------------------");
-        sll.deleteAtFirst();
-        sll.deleteAtFirst();
-        sll.display();
-        System.out.println("-------------------------");
-        sll.deleteFromLast();
-        sll.display();
-        System.out.println("-------------------------");
-        sll.insertAtPosition(2, 3);
-        sll.display();
-        System.out.println("--------------------------");
-        sll.deleteFromPosition(3);
-        sll.display();
-        System.out.println("---------------------------");
-        sll.insertAtBeginning(11);
-        sll.display();
-        System.out.println("Third node from end: " + sll.findNodeFromEnd(3).data);
-        System.out.println("Fifth node from end: " + sll.findNodeFromEnd(5).data);
-        System.out.println("Middle node:" + sll.findMiddleNode().data);
-        System.out.println("Length of linked list: " + sll.length());
+        private ListNode(int data) {
+            this.data = data;
+            this.next = null;
+        }
     }
+
+    private ListNode head;
 
     public void display() {
         ListNode current = head;
@@ -294,7 +263,7 @@ public class SinglyLinkedList {
 
     public ListNode insertNodeAtSortedList(int value) {
         ListNode newNode = new ListNode(value);
-        if (head == null) {
+        if (head ==  null) {
             return newNode;
         }
         ListNode current = head;
@@ -310,13 +279,44 @@ public class SinglyLinkedList {
         return head;
     }
 
-    private static class ListNode {
-        private final int data;
-        private ListNode next;
-
-        private ListNode(int data) {
-            this.data = data;
-            this.next = null;
-        }
+    public static void main(String[] args) {
+        SinglyLinkedList sll = new SinglyLinkedList();
+        sll.head = new ListNode(10);
+        ListNode second = new ListNode(1);
+        ListNode third = new ListNode(8);
+        ListNode fourth = new ListNode(11);
+        sll.head.next = second;
+        second.next = third;
+        third.next = fourth;
+        sll.display();
+        System.out.println("---------------------------");
+        sll.insertAtBeginning(11);
+        sll.insertAtBeginning(8);
+        sll.insertAtBeginning(1);
+        sll.display();
+        System.out.println("------------------------");
+        sll.insertAtLast(15);
+        sll.insertAtLast(26);
+        sll.display();
+        System.out.println("------------------------");
+        sll.deleteAtFirst();
+        sll.deleteAtFirst();
+        sll.display();
+        System.out.println("-------------------------");
+        sll.deleteFromLast();
+        sll.display();
+        System.out.println("-------------------------");
+        sll.insertAtPosition(2, 3);
+        sll.display();
+        System.out.println("--------------------------");
+        sll.deleteFromPosition(3);
+        sll.display();
+        System.out.println("---------------------------");
+        sll.insertAtBeginning(11);
+        sll.display();
+        System.out.println("Third node from end: " + sll.findNodeFromEnd(3).data);
+        System.out.println("Fifth node from end: " + sll.findNodeFromEnd(5).data);
+        System.out.println("Middle node:" + sll.findMiddleNode().data);
+        System.out.println("Length of linked list: " + sll.length());
     }
 }
