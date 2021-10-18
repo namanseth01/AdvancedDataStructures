@@ -223,6 +223,12 @@ public class SinglyLinkedList {
     6. return mainptr;
      */
 
+    public ListNode findNodeFromEnd() {
+        ListNode mainPointer = head;
+        ListNode refPointer = head;
+        int count = 0;
+
+    }
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
