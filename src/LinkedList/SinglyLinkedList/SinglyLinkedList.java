@@ -262,6 +262,10 @@ public class SinglyLinkedList {
     }
 
     public ListNode insertNodeAtSortedList(int value) {
+        ListNode newNode = new ListNode(value);
+        if (head ==  null) {
+            return newNode;
+        }
         return head;
     }
     public static void main(String[] args) {
