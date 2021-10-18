@@ -223,11 +223,19 @@ public class SinglyLinkedList {
     6. return mainptr;
      */
 
-    public ListNode findNodeFromEnd() {
+    public ListNode findNodeFromEnd(int n) {
         ListNode mainPointer = head;
         ListNode refPointer = head;
         int count = 0;
-
+        while (count < n) {
+            refPointer = refPointer.next;
+            count++;
+        }
+        while (refPointer != null) {
+            refPointer = refPointer.next;
+            mainPointer = mainPointer.next;
+        }
+        return mainPointer;
     }
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
