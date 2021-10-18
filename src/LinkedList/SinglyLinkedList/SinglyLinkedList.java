@@ -274,6 +274,7 @@ public class SinglyLinkedList {
             current = current.next;
         }
         newNode.next = current;
+        assert temp != null;
         temp.next = newNode;
         return head;
     }
