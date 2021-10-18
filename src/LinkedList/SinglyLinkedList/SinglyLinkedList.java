@@ -237,6 +237,10 @@ public class SinglyLinkedList {
         }
         return mainPointer;
     }
+
+    /*
+    Remove duplicates from sorted list.
+     */
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
