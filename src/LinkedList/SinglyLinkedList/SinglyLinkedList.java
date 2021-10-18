@@ -249,6 +249,10 @@ public class SinglyLinkedList {
                 }
        }
      */
+
+    public void removeDuplicatesInSortedList() {
+
+    }
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
