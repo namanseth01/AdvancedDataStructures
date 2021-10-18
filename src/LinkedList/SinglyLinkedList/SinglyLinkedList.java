@@ -207,6 +207,22 @@ public class SinglyLinkedList {
         return slowPointer;
     }
 
+    /*
+    Find nth element from end of a linked List.
+    1. mainptr = head;
+    2. refptr = head;
+    3. count = 0;
+    4. while (count < n) {
+            refptr = refptr.next;
+            count++;
+       }
+    5. while (refptr != null) {
+            refptr = refptr.next;
+            mainptr = mainptr.next;
+       }
+    6. return mainptr;
+     */
+
     public static void main(String[] args) {
         SinglyLinkedList sll = new SinglyLinkedList();
         sll.head = new ListNode(10);
