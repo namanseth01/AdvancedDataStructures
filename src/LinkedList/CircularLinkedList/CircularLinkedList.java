@@ -37,5 +37,21 @@ public class CircularLinkedList {
         ListNode second = new ListNode(2);
         ListNode third = new ListNode(3);
         ListNode fourth = new ListNode(4);
+
+        first.next = second;
+        second.next = third;
+        third.next = fourth;
+        fourth.next = first;
+    }
+
+    public void display(int data) {
+
+    }
+
+
+
+    public static void main(String[] args) {
+        CircularLinkedList csll = new CircularLinkedList();
+        csll.createCircularLinkedList();
     }
 }
