@@ -13,5 +13,23 @@ It is an ordered list in which insertion and deletion are done at one end, calle
 The last element inserted is the first one to be deleted called as "LIFO"
  */
 
+import LinkedList.SinglyLinkedList.SinglyLinkedList;
+
 public class Stack {
+
+    private ListNode top;
+    private int length;
+
+    private static class ListNode {
+        private final int data;
+        private ListNode next;
+
+        private ListNode(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+
+
 }
