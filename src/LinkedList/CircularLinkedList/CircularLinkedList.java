@@ -57,8 +57,6 @@ public class CircularLinkedList {
         System.out.println(first.data);
     }
 
-
-
     public static void main(String[] args) {
         CircularLinkedList csll = new CircularLinkedList();
         csll.createCircularLinkedList();
