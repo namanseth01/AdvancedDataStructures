@@ -9,6 +9,7 @@ import java.util.Arrays;
 
 public class knapsack {
     public static void main(String[] args) {
+        final int CAPACITY = 60;
         int[] weight = new int[]{5, 10, 20, 30, 40};
         int[] profit = new int[]{30, 20, 100, 90, 160};
         float[] ratio = new float[profit.length];
@@ -16,7 +17,13 @@ public class knapsack {
             ratio[i] = (float)profit[i] / (float)weight[i];
         }
         Arrays.sort(ratio);
+        int sum = 0;
         float[] x = new float[profit.length];
+        for (int i = 0; i < profit.length; i++) {
+            while (sum < CAPACITY) {
+                sum += ratio[i];
 
+            }
+        }
     }
 }
