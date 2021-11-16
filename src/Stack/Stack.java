@@ -19,9 +19,8 @@ public class Stack {
 
     private ListNode top;
     private int length;
-
-    private static class ListNode {
-        private final int data;
+    private class ListNode {
+        private int data;
         private ListNode next;
 
         private ListNode(int data) {
@@ -30,6 +29,21 @@ public class Stack {
         }
     }
 
+    public Stack() {
+        top = null;
+        length = 0;
+    }
 
+    public int length() {
+        return length;
+    }
+
+    public boolean isEmpty() {
+        return top == null;
+    }
+
+    public void push(int data) {
+
+    }
 
 }
