@@ -22,8 +22,14 @@ public class knapsack {
         for (int i = 0; i < profit.length; i++) {
             while (sum < CAPACITY) {
                 sum += ratio[i];
-
+                x[i] = 0;
+                i++;
             }
+            x[--i] = (CAPACITY - (sum - x[i - 1])) / ratio[i + 1];
+            for (int j = i + 1; j < profit.length ; j++) {
+                x[j] = 0;
+            }
+            System.out.println(x[i]);
         }
     }
 }
