@@ -15,6 +15,8 @@ The last element inserted is the first one to be deleted called as "LIFO"
 
 import LinkedList.SinglyLinkedList.SinglyLinkedList;
 
+import java.util.EmptyStackException;
+
 public class Stack {
 
     private ListNode top;
@@ -49,4 +51,13 @@ public class Stack {
         length++;
     }
 
+    public int pop(){
+        if(isEmpty()){
+            throw new EmptyStackException();
+        }
+        int result=top.data;
+        top=top.next;
+        length--;
+        return result;
+    }
 }
