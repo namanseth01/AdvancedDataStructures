@@ -19,7 +19,7 @@ public class Stack {
 
     private ListNode top;
     private int length;
-    private class ListNode {
+    private static class ListNode {
         private int data;
         private ListNode next;
 
@@ -43,7 +43,10 @@ public class Stack {
     }
 
     public void push(int data) {
-
+        ListNode temp = new ListNode(data);
+        temp.next=top;
+        top=temp;
+        length++;
     }
 
 }
