@@ -51,6 +51,19 @@ Depth:
 -> Depth of the tree is the total number of edges from root node to leaf node in the longest path.
 -> Depth of root node = 0.
 
-Subtree:
+Sub-tree:
 -> In a tree, each child from a node forms a  sub-tree recursively.
 -> Every child node forms a sub - tree on its parent node.
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+BINARY TREE
+
+-> Binary tree is a special tree structure in which each node have at least 2 children.
+-> Thus, in a binary tree every node has either 2 child, or 1 child, or 0 child.
+
+Unlabeled Binary Tree
+-> If its node are not assigned any label.
+-> Number of different Binary Trees possible with 'n' unlabeled nodes = C(2n, n)
