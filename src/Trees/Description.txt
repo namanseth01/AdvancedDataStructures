@@ -66,4 +66,8 @@ BINARY TREE
 
 Unlabeled Binary Tree
 -> If its node are not assigned any label.
--> Number of different Binary Trees possible with 'n' unlabeled nodes = C(2n, n)
+-> Number of different Binary Trees possible with 'n' unlabeled nodes = C(2n, n) / (n + 1)
+
+Labeled Binary Tree
+-> If its node are assigned any label.
+-> Number of different Binary Trees possible with 'n' alabeled nodes = C(2n, n) * n! / (n + 1)
