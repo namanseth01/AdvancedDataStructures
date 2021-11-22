@@ -70,4 +70,9 @@ Unlabeled Binary Tree
 
 Labeled Binary Tree
 -> If its node are assigned any label.
--> Number of different Binary Trees possible with 'n' alabeled nodes = C(2n, n) * n! / (n + 1)
+-> Number of different Binary Trees possible with 'n' labeled nodes = C(2n, n) * n! / (n + 1)
+
+
+Trees Grouping:
+    -> Binary Tree (2 children)
+    e
