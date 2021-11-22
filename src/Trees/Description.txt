@@ -1,0 +1,5 @@
+Properties:
+-> There is one and only one path between every pair of vertices in tree.
+-> A tree with n vertices has exactly (n-1) edges.
+-> A graph is a tree if and only if it is minimally connected.
+->
