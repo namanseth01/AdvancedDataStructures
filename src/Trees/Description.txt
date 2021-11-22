@@ -18,3 +18,11 @@ Parent:
 
 Child:
 -> The node which is a descendant of some node is called child node.
+-> All the nodes except root node are child nodes.
+
+Siblings:
+-> Node which belong to the same parent  are called sibling nodes.
+-> NOdes with the same parent are sibling nodes.
+
+Degree:
+-> Degree of node is the total number of children of that node.
