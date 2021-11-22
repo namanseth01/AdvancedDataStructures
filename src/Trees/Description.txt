@@ -50,3 +50,7 @@ Depth:
 -> Total number of edges from root node to a particular node is called as depth of that node.
 -> Depth of the tree is the total number of edges from root node to leaf node in the longest path.
 -> Depth of root node = 0.
+
+Subtree:
+-> In a tree, each child from a node forms a  sub-tree recursively.
+-> Every child node forms a sub - tree on its parent node.
