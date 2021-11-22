@@ -26,3 +26,4 @@ Siblings:
 
 Degree:
 -> Degree of node is the total number of children of that node.
+-> Degree of tree is the highest degree of a node among all the nodes in the tree.e
