@@ -40,3 +40,13 @@ Leaf node:
 Level:
 -> In a tree, each step from top to bottom is called as level of tree.
 -> The level count starts with 0 by default, and increments  by 1 at each level.
+
+Height:
+-> Total number of edges that lies on the longest path from any leaf node to a particular node is called as height of that node.
+-> Height of a tree is the height of that node.
+-> Height of all leaf nodes = 0.
+
+Depth:
+-> Total number of edges from root node to a particular node is called as depth of that node.
+-> Depth of the tree is the total number of edges from root node to leaf node in the longest path.
+-> Depth of root node = 0.
