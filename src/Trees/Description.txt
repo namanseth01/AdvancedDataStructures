@@ -75,4 +75,3 @@ Labeled Binary Tree
 
 Trees Grouping:
     -> Binary Tree (2 children)
-    e
