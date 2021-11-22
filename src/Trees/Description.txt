@@ -14,3 +14,7 @@ Edge:
 Parent:
 -> The node which has a branch from it to any other node is called as a parent node.
 -> The node which has one or more children is called as parent node.
+-> In tree, a parent node can have any number of child nodes.
+
+Child:
+-> The node which is a descendant of some node is called child node.
