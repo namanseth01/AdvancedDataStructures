@@ -36,3 +36,7 @@ Internal node:
 Leaf node:
 -> The node which does not have any child is called as leaf node.
 -> Also known as External nodes or Terminal nodes.
+
+Level:
+-> In a tree, each step from top to bottom is called as level of tree.
+-> The level count starts with 0 by default, and increments  by 1 at each level.
