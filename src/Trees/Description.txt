@@ -26,4 +26,9 @@ Siblings:
 
 Degree:
 -> Degree of node is the total number of children of that node.
--> Degree of tree is the highest degree of a node among all the nodes in the tree.e
+-> Degree of tree is the highest degree of a node among all the nodes in the tree.
+
+Internal node:
+-> The node which has at least one child is called as an internal node.
+-> Also  known as non-terminal node.
+-> Every non-leaf node is an internal node.
