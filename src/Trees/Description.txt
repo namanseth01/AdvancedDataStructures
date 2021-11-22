@@ -32,3 +32,7 @@ Internal node:
 -> The node which has at least one child is called as an internal node.
 -> Also  known as non-terminal node.
 -> Every non-leaf node is an internal node.
+
+Leaf node:
+-> The node which does not have any child is called as leaf node.
+-> Also known as External nodes or Terminal nodes.
