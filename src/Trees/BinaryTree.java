@@ -68,5 +68,8 @@ public class BinaryTree {
         System.out.println();
         System.out.println("------------------------------");
         bt.postOrder(bt.root);
+        System.out.println();
+        System.out.println("------------------------------");
+        bt.inOrder(bt.root);
     }
 }
