@@ -43,9 +43,21 @@ public class BinaryTree {
         preOrder(root.right);
     }
 
+    public void postOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        postOrder(root.left);
+        postOrder(root.right);
+        System.out.print(root.data + " -> ");
+    }
+
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.createBinaryTree();
         bt.preOrder(bt.root);
+        System.out.println();
+        System.out.println("------------------------------");
+        bt.postOrder(bt.root);
     }
 }
