@@ -6,8 +6,8 @@ public class BinaryTree {
     private TreeNode root;
 
     private class TreeNode {
-        private Trees.TreeNode left;
-        private Trees.TreeNode right;
+        TreeNode left;
+        TreeNode right;
         private int data;
 
 
@@ -24,5 +24,8 @@ public class BinaryTree {
         TreeNode fifth = new TreeNode(5);
         TreeNode sixth = new TreeNode(6);
         TreeNode seventh = new TreeNode(7);
+        root = first;
+        first.left = second;
+        first.right = third;
     }
 }
