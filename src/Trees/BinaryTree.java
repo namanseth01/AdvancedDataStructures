@@ -13,4 +13,8 @@ public class BinaryTree {
             this.data = data;
         }
     }
+
+    public void createBinaryTree() {
+
+    }
 }
