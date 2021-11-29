@@ -34,6 +34,15 @@ public class BinaryTree {
         System.out.println("Binary tree created......");
     }
 
+    public void preOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        System.out.println(root.data + " -> ");
+        preOrder(root.left);
+        preOrder(root.right);
+    }
+
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.createBinaryTree();
