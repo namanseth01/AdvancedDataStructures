@@ -52,6 +52,15 @@ public class BinaryTree {
         System.out.print(root.data + " -> ");
     }
 
+    public void inOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        postOrder(root.left);
+        System.out.print(root.data + " -> ");
+        postOrder(root.right);
+    }
+
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.createBinaryTree();
