@@ -1,3 +1,8 @@
+TREE:-
+
+->It is a non-linear data structure used for storing the data.
+->It is made up of nodes and edges without having a cycle.
+
 Properties:
 -> There is one and only one path between every pair of vertices in tree.
 -> A tree with n vertices has exactly (n-1) edges.
