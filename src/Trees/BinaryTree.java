@@ -27,5 +27,9 @@ public class BinaryTree {
         root = first;
         first.left = second;
         first.right = third;
+        second.left = fourth;
+        second.right = fifth;
+        third.left = sixth;
+        third.right = seventh;
     }
 }
