@@ -31,5 +31,11 @@ public class BinaryTree {
         second.right = fifth;
         third.left = sixth;
         third.right = seventh;
+        System.out.println("Binary tree created......");
+    }
+
+    public static void main(String[] args) {
+        BinaryTree bt = new BinaryTree();
+        bt.createBinaryTree();
     }
 }
