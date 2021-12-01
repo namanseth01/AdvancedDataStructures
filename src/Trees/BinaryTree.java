@@ -68,7 +68,10 @@ public class BinaryTree {
         }
         Stack stack = new Stack();
         stack.push(root.data);
-        while
+        while (!stack.isEmpty()) {
+            TreeNode temp = null;
+            temp.data = stack.pop();
+        }
     }
 
     public static void main(String[] args) {
