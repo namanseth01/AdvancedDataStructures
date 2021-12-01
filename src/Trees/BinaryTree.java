@@ -1,5 +1,6 @@
 package Trees;
 
+import Stack.Stack;
 import com.sun.source.tree.Tree;
 
 public class BinaryTree {
@@ -59,6 +60,15 @@ public class BinaryTree {
         postOrder(root.left);
         System.out.print(root.data + " -> ");
         postOrder(root.right);
+    }
+
+    public void preOrder1(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        Stack stack = new Stack();
+        stack.push(root.data);
+        while
     }
 
     public static void main(String[] args) {
