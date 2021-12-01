@@ -1,7 +1,8 @@
 package Trees;
 
-import Stack.Stack;
 import com.sun.source.tree.Tree;
+
+import java.util.Stack;
 
 public class BinaryTree {
     private TreeNode root;
@@ -66,11 +67,17 @@ public class BinaryTree {
         if (root == null) {
             return;
         }
-        Stack stack = new Stack();
-        stack.push(root.data);
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
         while (!stack.isEmpty()) {
-            TreeNode temp = null;
-            temp.data = stack.pop();
+            TreeNode temp = stack.pop();
+            System.out.print(temp.data + " -> ");
+            if (temp.right != null) {
+                stack.push(temp.right);
+            }
+            if (temp.left != null) {
+                stack.push(temp.left);
+            }
         }
     }
 
@@ -84,5 +91,8 @@ public class BinaryTree {
         System.out.println();
         System.out.println("------------------------------");
         bt.inOrder(bt.root);
+        System.out.println();
+        System.out.println("-------------------------------");
+        bt.preOrder1(bt.root);
     }
 }
