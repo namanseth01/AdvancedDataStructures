@@ -86,7 +86,17 @@ public class BinaryTree {
             return;
         }
         Stack<TreeNode> stack = new Stack<>();
-        TreeNode temp = root;e
+        TreeNode temp = root;
+        while (!stack.isEmpty() || temp != null) {
+            if (temp != null) {
+                stack.push(temp);
+                temp = temp.left;
+            } else {
+                temp = stack.pop();
+                System.out.println(temp.data + " -> ");
+                temp = temp.right;
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -102,5 +112,8 @@ public class BinaryTree {
         System.out.println();
         System.out.println("-------------------------------");
         bt.preOrder1(bt.root);
+        System.out.println();
+        System.out.println("------------------------------");
+        bt.inOrder1(bt.root);
     }
 }
