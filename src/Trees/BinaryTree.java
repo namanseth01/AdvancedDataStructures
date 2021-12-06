@@ -82,7 +82,11 @@ public class BinaryTree {
     }
 
     public void inOrder1(TreeNode root) {
-
+        if (root == null) {
+            return;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode temp = root;e
     }
 
     public static void main(String[] args) {
