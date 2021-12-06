@@ -81,6 +81,10 @@ public class BinaryTree {
         }
     }
 
+    public void inOrder1(TreeNode root) {
+
+    }
+
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.createBinaryTree();
