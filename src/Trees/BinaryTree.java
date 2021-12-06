@@ -93,7 +93,7 @@ public class BinaryTree {
                 temp = temp.left;
             } else {
                 temp = stack.pop();
-                System.out.println(temp.data + " -> ");
+                System.out.print(temp.data + " -> ");
                 temp = temp.right;
             }
         }
@@ -103,17 +103,18 @@ public class BinaryTree {
         BinaryTree bt = new BinaryTree();
         bt.createBinaryTree();
         bt.preOrder(bt.root);
-        System.out.println();
+        System.out.println("pre");
         System.out.println("------------------------------");
         bt.postOrder(bt.root);
-        System.out.println();
+        System.out.println("post");
         System.out.println("------------------------------");
         bt.inOrder(bt.root);
-        System.out.println();
+        System.out.println("in");
         System.out.println("-------------------------------");
         bt.preOrder1(bt.root);
-        System.out.println();
+        System.out.println("pre");
         System.out.println("------------------------------");
         bt.inOrder1(bt.root);
+        System.out.println("in");
     }
 }
