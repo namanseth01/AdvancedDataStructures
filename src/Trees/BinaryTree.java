@@ -58,9 +58,9 @@ public class BinaryTree {
         if (root == null) {
             return;
         }
-        postOrder(root.left);
+        inOrder(root.left);
         System.out.print(root.data + " -> ");
-        postOrder(root.right);
+        inOrder(root.right);
     }
 
     public void preOrder1(TreeNode root) {
